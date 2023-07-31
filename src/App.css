@@ -11,3 +11,50 @@
   height: 300px;
   border: 1px solid gray;
 }
+
+.calendar-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 4px;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.selected-day {
+  background-color: #4c80f1;
+  border-radius: 50%;
+}
+
+.selected-day:hover {
+  background-color: #2d61d0;
+  border-radius: 50%;
+}
+
+.custom-day:hover {
+  background-color: #e2ebff;
+  border-radius: 50%;
+  color: #4c80f1;
+}
+
+.gray-day {
+  opacity: 0.5;
+  pointer-events: none;
+}
