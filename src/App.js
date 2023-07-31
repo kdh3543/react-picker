@@ -28,7 +28,7 @@ function App() {
   }
   console.log(start)
 
-  const CustomDatePicker = forwardRef(({ value, onClick }, ref) => (
+  const CustomDatePicker = forwardRef(({ value, onClick }) => (
     <div>
       <button
         style={{
