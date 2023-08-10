@@ -28,6 +28,16 @@ function App() {
   }
   console.log(start)
 
+  const [test, setTest] = useState(1)
+
+  const upTest = () => {
+    setTest(test + 1)
+    console.log('up ', test)
+  }
+  const downTest = () => {
+    setTest((prev) => prev - 1)
+    console.log('down ', test)
+  }
   const CustomDatePicker = forwardRef(({ value, onClick }) => (
     <div>
       <button
@@ -39,6 +49,8 @@ function App() {
       >
         {value}
       </button>
+      <button onClick={upTest}>click!</button>
+      <button onClick={downTest}>downclick!</button>
     </div>
   ))
 
@@ -56,7 +68,6 @@ function App() {
             }}
           >
             <DatePicker
-              className="calendar-input"
               dateFormat={'yyyy년 MM월 dd일'}
               locale={ko}
               selected={start}

@@ -12,17 +12,6 @@
   border: 1px solid gray;
 }
 
-.calendar-input {
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
-  border-radius: 4px;
-  background: transparent;
-  width: 100%;
-  cursor: pointer;
-  text-align: center;
-}
-
 .calendar-header {
   display: flex;
   justify-content: space-around;
